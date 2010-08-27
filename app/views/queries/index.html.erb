@@ -1,0 +1,17 @@
+<% title "Queries" %>
+
+<table>
+  <tr>
+    <th>Terms</th>
+  </tr>
+  <% for query in @queries %>
+    <tr>
+      <td><%=h query.terms %></td>
+      <td><%= link_to "Show", query %></td>
+      <td><%= link_to "Edit", edit_query_path(query) %></td>
+      <td><%= link_to "Destroy", query, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Query", new_query_path %></p>

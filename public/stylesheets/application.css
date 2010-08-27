@@ -1,0 +1,11 @@
+/* Put application specific css here */
+body{margin:20px 0;}
+.container{height:400px;}
+.header{background:#ffc;height:80px;}
+.footer{background:#fcf;height:80px;}
+.maincol{background:#ccc;}
+.leftcol{background:#ccf;}
+.rightcol{background:#fcc;}
+.sidecol{background:#cfc;}
+.leftcol,.rightcol{height:150px;}
+.maincol,.sidecol{}

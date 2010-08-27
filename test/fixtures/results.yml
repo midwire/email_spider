@@ -1,0 +1,11 @@
+one:
+  query_id: 1
+  name: MyString
+  location: MyString
+  email: MyString
+
+two:
+  query_id: 1
+  name: MyString
+  location: MyString
+  email: MyString
