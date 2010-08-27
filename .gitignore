@@ -1,0 +1,11 @@
+.DS_Store
+log/*.log
+log/*.pid
+tmp/**/*
+config/database.yml
+db/*.sqlite3
+test/fixtures
+test/coverage
+public/system/
+pkg/*
+versions
