@@ -1,6 +1,6 @@
 class Query < ActiveRecord::Base
   attr_accessible :terms
-  has_many :results
+  has_many :results, :dependent => :destroy
   accepts_nested_attributes_for :results, :allow_destroy => true, :reject_if => proc { |obj| obj.blank? }
   
   def self.search(params)

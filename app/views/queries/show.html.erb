@@ -1,9 +1,19 @@
 <% title "Query" %>
 
-<p>
+<div class="query">
   <strong>Terms:</strong>
   <%=h @query.terms %>
-</p>
+  <div class="results">
+    <% @query.results.each do |result| %>
+      <%= result.visible_uri %><br/>
+      <div class="emails">
+        <% result.emails.each do |email| %>
+          <%= mail_to email.address %><br/>
+        <% end -%>
+      </div>
+    <% end -%>
+  </div>
+</div>
 
 <p>
   <%= link_to "Edit", edit_query_path(@query) %> |

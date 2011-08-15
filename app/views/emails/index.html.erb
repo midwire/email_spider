@@ -1,0 +1,17 @@
+<% title "Emails" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+  </tr>
+  <% for email in @emails %>
+    <tr>
+      <td><%=h email.address %></td>
+      <td><%= link_to "Show", email %></td>
+      <td><%= link_to "Edit", edit_email_path(email) %></td>
+      <td><%= link_to "Destroy", email, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New email", new_email_path %></p>

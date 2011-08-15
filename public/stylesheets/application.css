@@ -9,3 +9,9 @@ body{margin:20px 0;}
 .sidecol{background:#cfc;}
 .leftcol,.rightcol{height:150px;}
 .maincol,.sidecol{}
+.results{
+  margin-left:10px;
+}
+.emails{
+  margin-left:10px;
+}

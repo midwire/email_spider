@@ -14,13 +14,12 @@ class QueriesController < ApplicationController
   def create
     # @query = Query.new(params[:query])
     @query = Query.search(params[:query])
-    redirect_to :action => 'new'
-    # if @query.save
-    #   flash[:notice] = "Successfully created query."
-    #   redirect_to @query
-    # else
-    #   render :action => 'new'
-    # end
+    if @query.save
+      flash[:notice] = "Successfully created query."
+      redirect_to @query
+    else
+      render :action => 'new'
+    end
   end
   
   def edit
